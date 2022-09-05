@@ -1,2 +1,2 @@
 #!/bin/bash
-cat inacta | head -n 3 | last -n 1 | lpr
+cat inacta | head -n 3 | last -n 1 | pr |lpr
