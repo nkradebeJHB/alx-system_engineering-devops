@@ -1,3 +1,10 @@
+# Shell Redirections
+
+This project aims to teach about how to handle standard input and output and how to combine commands and filters with redirections in Shell.
+
+## Files
+The following files are Scripts performing the functions mentioned below:
+
 0. a script that prints “Hello, World”, followed by a new line to the standard output.
 
 1. a script that displays a confused smiley "(Ôo)'.
@@ -22,21 +29,21 @@
 
 11. a script that counts the number of directories and sub-directories in the current directory.
 
--The current and parent directories should not be taken into account
--Hidden directories should be counted
+* The current and parent directories should not be taken into account
+* Hidden directories should be counted
 
 12. a script that displays the 10 newest files in the current directory.
 
 Requirements:
 
--One file per line
--Sorted from the newest to the oldest
+* One file per line
+* Sorted from the newest to the oldest
 
 13. a script that takes a list of words as input and prints only words that appear exactly once.
 
--Input format: One line, one word
--Output format: One line, one word
--Words should be sorted
+* Input format: One line, one word
+* Output format: One line, one word
+* Words should be sorted
 
 14. a script that Display lines containing the pattern “root” from the file /etc/passwd
 
@@ -48,7 +55,7 @@ Requirements:
 
 18. a script that Display all lines of the file /etc/ssh/sshd_config starting with a letter.
 
--include capital letters as well
+* include capital letters as well
 
 19. a script that Replace all characters A and c from input to Z and e respectively.
 
