@@ -9,5 +9,5 @@ Projects done at **ALX SE Software Engineering program**
 ## Projects 
 All the following directories are projects done during the program:
 
-**0x00. Shell, navigation**: It aims to teach about basic commands, navigation, files and directories in **Shell**.
+**0x00-shell_basics**: It aims to teach about basic commands, navigation, files and directories in **Shell**.
 
