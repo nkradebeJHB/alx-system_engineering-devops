@@ -1,5 +1,10 @@
 # Shell Permissions
 
+This project aims to teach about man pages, permissions (owner, group and other) of files and directories in Shell.
+
+
+# Files
+The following files are Scripts performing the functions mentioned below:
 
 
 0.Script that switches the current user to another
