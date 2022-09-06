@@ -1,9 +1,10 @@
 # Shell Basics
 
-The following files are Scripts performing the functions mentioned below:
+This project aims to teach about basic commands, navigation, files and directories in Shell.
 
 ## Files
-All of the following files are **Scripts** performing the following functions:
+The following files are Scripts performing the functions mentioned below:
+
 
 0. Where am I? - Prints the absolute path name of the current working directory
 
