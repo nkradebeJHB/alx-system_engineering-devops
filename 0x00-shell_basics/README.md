@@ -1,6 +1,6 @@
 # Shell Basics
 
-This project aims to teach about the basic commands, navigation, files and directories in **Shell**.
+The following files are Scripts performing the functions mentioned below:
 
 ## Files
 All of the following files are **Scripts** performing the following functions:
