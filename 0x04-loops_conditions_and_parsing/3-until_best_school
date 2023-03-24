@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Bash script that displays Best School 10 times using unit
+i=10
+until [ "$i" -le 0 ]
+do
+	echo "Best School"
+	i=$((i - 1))
+done
+i=$i
