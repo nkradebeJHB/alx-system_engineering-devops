@@ -1,0 +1,14 @@
+# Make passwordAuthentication and add new private key
+file_line { 'replace password Authentication':
+  ensure  => 'present',
+  path    => '/etc/ssh/ssh_config',
+  replace => true,
+  line    => 'PasswordAuthentication no',
+  match   => 'PasswordAuthentication yes',
+}
+
+file_line { 'add the ssh key ~/.ssh/school':
+  ensure => 'present',
+  path   => '/etc/ssh/ssh_config',
+  line   => 'IdentityFile ~/.ssh/school',
+}
