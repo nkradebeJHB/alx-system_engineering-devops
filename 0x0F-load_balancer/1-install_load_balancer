@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Bash script that configures a new Ubuntu machine and
+# Configure HAproxy so that it send traffic to web-01 and web-02
+apt-get update
+apt-get -y install haproxy=1.6.\* -y
+echo "ENABLED=1" >> /etc/default/haproxy
+sed -i '/504.http/a \\nlisten http-in\n\tbind *:80\n\tmode http\n\tbalance roundrobin\n\tserver 109837-web-01 3.85.177.47:80 check\n\tserver 109837-web-02 54.174.243.198:80 check' /etc/haproxy/haproxy.cfg
+sudo service haproxy start
