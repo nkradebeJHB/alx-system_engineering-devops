@@ -3,8 +3,11 @@
 apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
-echo "Hello World!" | tee /var/www/html/index.nginx-debian.html
+echo "Best school" | tee /var/www/html/index.nginx-debian.html
 n_string="listen 80 default_server;\\n\\tlocation \/redirect_me {\\n\\t\\treturn 301 https:\/\/www.youtube.com\/;\\n\\t}"
+sed -i "s/listen 80 default_server;/$n_string/" /etc/nginx/sites-enabled/default
+echo "Ceci n'est pas une page" | tee /usr/share/nginx/html/404.html
+n_string="listen 80 default_server;\\nerror_page 404 \/404.html;\\n\\tlocation = \/404.html {\\n\\t\\troot \/usr\/share\/nginx\/html;\\n\\t\\tinternal;\\n\\t}"
 sed -i "s/listen 80 default_server;/$n_string/" /etc/nginx/sites-enabled/default
 n_string2="http {\\n\\tadd_header X-Served-By \"$HOSTNAME\";"
 sed -i "s/http {/$n_string2/" /etc/nginx/nginx.conf
