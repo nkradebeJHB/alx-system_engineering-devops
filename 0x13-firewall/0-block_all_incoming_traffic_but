@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Install UFW firewall and block all incoming traffic.
+# Except the following ports:
+# 22 (SSH), 443 (HTTPS SSL) and 80 (HTTP)
+
+ssh ubuntu@3.85.177.47
+
+apt-get -y update
+apt-get -y install ufw
+
+ufw disable
+ufw default deny incoming
+ufw default allow outgoing
+
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 443/tcp
+
+ufw enable
